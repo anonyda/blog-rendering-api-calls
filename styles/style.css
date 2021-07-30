@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1, h2{
+    font-size: 2rem;
+    margin: 1.2rem 0;
+}
+
+header{
+    padding: 2rem 0 ;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.blog-content{
+    display: flex;
+
+}
+
+main{
+    width: 60%;
+    margin: auto;
+    text-align: justify;
+}
+
+aside{
+    width: 30%;
+    padding-right: 2rem;
+}
+
+aside p{
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.banner-image{
+    width: 100%;
+}
+
+.author{
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+footer{
+    padding: 2rem ;
+    font-size: 2rem;
+    margin: 0 auto;
+    text-align: center;
+}
