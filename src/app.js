@@ -6,7 +6,6 @@ import { Footer } from "./components/footer.js";
 const renderWebpage = async () => {
     let data = await getData();
     firstBlog(data);
-    console.log(data);
 }
 
 Header();
