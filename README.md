@@ -4,3 +4,4 @@ Live Link [https://anonyda.github.io/blog-rendering-api-calls/](https://anonyda.
 ### To Do
 <li> Add Styling
 <li> Add Header and Footer Content
+<li> Add Media Queries 
