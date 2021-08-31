@@ -3,6 +3,5 @@ export const Footer = () =>{
     let copyright = document.createElement('div');
     copyright.classList.add('copyright');
     copyright.innerText = '2021 Blog';
-
     footer.appendChild(copyright);
 }

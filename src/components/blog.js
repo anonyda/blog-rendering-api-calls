@@ -1,11 +1,11 @@
 import { Aside } from "./aside.js";
 
 export const firstBlog = (data) => {
-    Blog(data, data[0]);
+    Blog(data[0]);
 }
 
 
-export const Blog = (data, blog) => {
+export const Blog = (blog) => {
     let markup = document.querySelector('main');
     let heading = document.createElement('h1');
     heading.innerText = blog.title;
@@ -27,6 +27,6 @@ export const Blog = (data, blog) => {
     markup.appendChild(authorPara);
     markup.appendChild(blogContent);
 
-    Aside(data, blog.links);
+    Aside(blog.links);
 
 }

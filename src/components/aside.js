@@ -1,6 +1,7 @@
 import { Blog } from "./blog.js";
+import { jsonData } from "../utils/ApiCalls.js";
 
-export const Aside = (data, links) =>{
+export const Aside = (links) =>{
     let aside = document.querySelector('aside');
     aside.classList.add('related-links')
     let heading = document.createElement('h2');
@@ -12,7 +13,7 @@ export const Aside = (data, links) =>{
         rLink.innerText = link.title;
         rLink.id = link.id;
         rLink.onclick = () => {
-            renderNewBlog(event, data)
+            renderNewBlog(event)
         }
         aside.appendChild(rLink);
 
@@ -20,11 +21,12 @@ export const Aside = (data, links) =>{
 
 }
 
-const renderNewBlog = (event, data) =>{
+const renderNewBlog = (event) =>{
+    // console.log(data);
     document.querySelector('main').innerHTML = "";
     document.querySelector('aside').innerHTML = "";
-    let newBlog = data.filter((blog) => {
+    let newBlog = jsonData.find((blog) => {
         return blog.id === event.target.id;
     })
-    Blog(data, newBlog[0]);
+    Blog(newBlog);
 }
